@@ -4,13 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './components/header/header.component';
+import { HeaderComponent } from './shared/components/header/header.component';
 import { VoluntaryComponent } from './modules/voluntary/voluntary.component';
 import { ProjectsComponent } from './modules/projects/projects.component';
 import { HelpComponent } from './modules/help/help.component';
 import { AboutHerComponent } from './modules/about-her/about-her.component';
 import { HomeComponent } from './modules/home/home.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
+import { ModulesComponent } from './modules/modules.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { FooterComponent } from './components/footer/footer.component';
     HelpComponent,
     AboutHerComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

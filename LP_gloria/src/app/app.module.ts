@@ -11,7 +11,7 @@ import { HelpComponent } from './modules/help/help.component';
 import { AboutHerComponent } from './modules/about-her/about-her.component';
 import { HomeComponent } from './modules/home/home.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
-import { ModulesComponent } from './modules/modules.component';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,8 @@ import { ModulesComponent } from './modules/modules.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

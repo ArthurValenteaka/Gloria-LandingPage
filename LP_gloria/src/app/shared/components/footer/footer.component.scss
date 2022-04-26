@@ -1,0 +1,68 @@
+.footer{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  background-color: #602367;
+  bottom: 0;
+
+  .content-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+  }
+
+  .content-footer-left{
+    display: flex;
+    flex-direction: column;
+
+    .img-gloria{
+      position: relative;
+      bottom: 20px;
+    }
+
+    .logo-gloria{
+      width: 250px;
+    }
+
+    .copy{
+      color: white
+    }
+  };
+
+  .content-footer-rigth{
+    display: flex;
+    flex-direction: column;
+
+    .form{
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin-bottom: 30px;
+      input{
+        width: 470px;
+        height: 70px;
+        border-radius: 25px;
+        background-color: #C4C4C4;
+        border-style: none;
+        color: white;
+
+        :active{
+          border-style: none;
+        }
+
+    }
+  }
+
+    h1{
+      font-size: 52px;
+      font-weight: 700;
+      line-height: 56px;
+      color:#FFCA05;
+      width: 500px;
+      text-decoration:underline;
+      margin-top: 30px;
+    }
+
+  }
+}

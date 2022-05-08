@@ -12,6 +12,7 @@ import { AboutHerComponent } from './modules/about-her/about-her.component';
 import { HomeComponent } from './modules/home/home.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {MatInputModule} from '@angular/material/input';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatInputModule
+    MatInputModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

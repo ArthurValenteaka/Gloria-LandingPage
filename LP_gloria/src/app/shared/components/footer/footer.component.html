@@ -1,27 +1,38 @@
 <footer class="footer">
   <div class="content-footer">
     <div class="content-footer-left">
-      <img class="img-gloria" src="assets/img/imgFooter.svg" alt="">
-      <img class="logo-gloria" src="assets/img/logo.svg" alt="">
+      <img class="img-gloria" src="assets/img/imgFooter.svg" alt="" />
+      <img class="logo-gloria" src="assets/img/logo.svg" alt="" />
       <h4 class="copy">Copyright 2022</h4>
     </div>
     <div class="content-footer-rigth">
       <h1 class="title">SEJA UM ALIADO A CAUSA</h1>
-        <form class="form" action="">
-          <input matInput placeholder="name" type="text">
-          <input matInput placeholder="e-mail" type="email">
-        </form>
-      <button>Cadastre-se</button>
-      <div class="intern-content-footer-left">
-        <h4>Nos siga nas redes sociais</h4>
-        <img src="assets/img/facebook.svg" alt="">
-        <img src="assets/img/instagram.svg" alt="">
-        <img src="assets/img/twitter.svg" alt="">
-      </div>
-      <div class="intern-content-footer-rigth">
-        <h2>Disque:</h2>
-        <h3><span>180</span> - Central de Atendimento à Mulher</h3>
-        <h3><span>190</span> - PMDF</h3>
+
+      <mat-form-field class="form" action="">
+        <mat-label>Name</mat-label>
+        <input matInput />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>E-mail</mat-label>
+        <input matInput />
+      </mat-form-field>
+
+      <button mat-button class="btn-footer">Cadastre-se</button>
+      <div class="row"></div>
+      <div class="intern-content-footer">
+        <div class="intern-content-footer-left">
+          <h4>Nos siga nas redes</h4>
+          <div class="social-media">
+            <img src="assets/img/facebook.svg" alt="" />
+            <img src="assets/img/instagram.svg" alt="" />
+            <img src="assets/img/twitter.svg" alt="" />
+          </div>
+        </div>
+        <div class="intern-content-footer-right">
+          <h2>Disque:</h2>
+          <h3><span>180</span> - Central de Atendimento à Mulher</h3>
+          <h3><span>190</span> - PMDF</h3>
+        </div>
       </div>
     </div>
   </div>

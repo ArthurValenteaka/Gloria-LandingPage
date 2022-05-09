@@ -1,14 +1,13 @@
-.footer {
-  position: absolute;
+footer {
   width: 100%;
   height: auto;
   background-color: #602367;
-  bottom: 0;
 
   .content-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    position: static;
   }
 
   .content-footer-left {
@@ -123,7 +122,6 @@
       }
     }
     .intern-content-footer-right {
-
       h2 {
         color: white;
         font-size: 24px;

@@ -1,23 +1,24 @@
-import { RouterModule } from '@angular/router';
+import { HomeModule } from './home/home.module';
+import { HelpModule } from './help/help.module';
+import { AboutHerModule } from './about-her/about-her.module';
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-
-
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ModulesComponent } from './modules.component';
+import { CommonModule } from '@angular/common';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
-  declarations: [
-    ModulesComponent
-  ],
   imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    RouterModule,
-
+    CommonModule,
+    HomeModule,
+    SharedModule,
+    AboutHerModule,
+    HelpModule
   ],
-  providers: [],
-  bootstrap: [ModulesComponent]
+  exports: [
+    CommonModule,
+    HomeModule,
+    SharedModule,
+    AboutHerModule,
+    HelpModule
+  ],
 })
-export class AppModule { }
+export class ModulesModule {}

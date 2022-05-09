@@ -1,38 +1,22 @@
+import { SharedModule } from 'src/app/shared/shared.module';
+import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './shared/components/header/header.component';
-import { VoluntaryComponent } from './modules/voluntary/voluntary.component';
-import { ProjectsComponent } from './modules/projects/projects.component';
-import { HelpComponent } from './modules/help/help.component';
-import { AboutHerComponent } from './modules/about-her/about-her.component';
-import { HomeComponent } from './modules/home/home.component';
-import { FooterComponent } from './shared/components/footer/footer.component';
-import {MatInputModule} from '@angular/material/input';
-import {MatButtonModule} from '@angular/material/button';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    VoluntaryComponent,
-    ProjectsComponent,
-    HelpComponent,
-    AboutHerComponent,
-    HomeComponent,
-    FooterComponent,
-  ],
+  declarations: [AppComponent],
   imports: [
+    HttpClientModule,
+    SharedModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatInputModule,
-    MatButtonModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

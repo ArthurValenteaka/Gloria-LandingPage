@@ -2,14 +2,13 @@
   display: flex;
   background-color: #602367;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content:center;
   align-items: center;
   padding: 130px;
   padding-top: 70px;
   padding-bottom: 70px;
   gap: 100px;
   position: relative;
-  bottom: 20px;
 
   div {
     display: flex;
@@ -17,7 +16,6 @@
     align-items: center;
     font-family: "Montserrat", sans-serif;
     gap: 40px;
-    width: 60%;
     h3 {
       font-size: 36px;
       color: white;
@@ -28,6 +26,8 @@
       color: white;
       line-height: 30px;
       font-weight: 400;
+      width: 750px;
+      text-align: justify;
     }
   }
 

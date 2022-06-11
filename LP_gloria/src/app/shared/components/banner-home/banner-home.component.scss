@@ -1,13 +1,14 @@
 .banner-home {
   min-height: 90vh;
-  background: url(/assets/img/home-backgr.png) no-repeat center center;
   background-size: cover;
   .banner-content {
-    height: 97vh;
+    height: 95vh;
+    bottom: 10vh;
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-end;
 
     .content-left {
       display: flex;

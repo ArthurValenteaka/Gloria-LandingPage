@@ -1,3 +1,4 @@
+import { VoluntaryRoutingModule } from './voluntary-routing.component';
 import { VoluntaryComponent } from './voluntary.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 
@@ -13,6 +14,7 @@ import { CommonModule } from '@angular/common';
   imports: [
     CommonModule,
     SharedModule,
+    VoluntaryRoutingModule
   ]
 })
 export class VoluntaryModule { }

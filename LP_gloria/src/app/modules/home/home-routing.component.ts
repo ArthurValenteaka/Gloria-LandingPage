@@ -8,14 +8,34 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: HomeComponent
-      }
-    ]
-  }
-]
+        component: HomeComponent,
+      },
+    ],
+  },
+  {
+    path: 'ajude',
+    loadChildren: () => import('./../help/help.module').then(e => e.HelpModule),
+    pathMatch: 'full',
+  },
+  {
+    path: 'sobre',
+    loadChildren: () => import('./../about-her/about-her.module').then(e => e.AboutHerModule),
+    pathMatch: 'full',
+  },
+  {
+    path: 'voluntario',
+    loadChildren: () => import('./../voluntary/voluntary.module').then(e => e.VoluntaryModule),
+    pathMatch: 'full',
+  },
+  {
+    path: 'projetos',
+    loadChildren: () => import('./../projects/projects.module').then(e => e.ProjectsModule),
+    pathMatch: 'full',
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class HomeRoutingModule { }
+export class HomeRoutingModule {}

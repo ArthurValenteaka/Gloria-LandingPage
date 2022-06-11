@@ -1,4 +1,4 @@
-import { HomeRoutingModule } from './../home/home-routing.component';
+import { HelpRoutingModule } from './help-routing.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { HelpComponent } from './help.component';
 
@@ -14,7 +14,7 @@ import { CommonModule } from '@angular/common';
   imports: [
     CommonModule,
     SharedModule,
-    HomeRoutingModule
+    HelpRoutingModule
   ]
 })
 export class HelpModule { }

@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-banner-home',
   templateUrl: './banner-home.component.html',
-  styleUrls: ['./banner-home.component.scss']
+  styleUrls: ['./banner-home.component.scss'],
 })
 export class BannerHomeComponent implements OnInit {
+  @Input() url: string = '';
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

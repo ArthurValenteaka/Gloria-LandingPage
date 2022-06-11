@@ -1,0 +1,186 @@
+@import "../responsive-media";
+
+@mixin grid($cols) {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: repeat($cols, 1fr);
+  grid-column-gap: 24px;
+}
+
+.aling-center {
+  align-self: center;
+}
+
+.aling-bottom {
+  align-self: end;
+}
+
+.justify-center {
+  justify-self: center;
+}
+
+.justify-right {
+  justify-self: right;
+}
+
+&.inner-grid {
+  padding: 0;
+  grid-column-gap: 0;
+}
+
+.container,
+.grid {
+  width: 100%;
+  padding: 0 24px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.grid {
+  @include grid(4);
+}
+
+.cell {
+  &-1-phone {
+    grid-column: span 1;
+  }
+  &-2-phone {
+    grid-column: span 2;
+  }
+  &-3-phone {
+    grid-column: span 3;
+  }
+  &-4-phone {
+    grid-column: span 4;
+  }
+}
+
+@include responsive-media($for-tablet-portrait-up) {
+  .container,
+  .grid {
+    padding: 0 72px;
+    max-width: 824px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .grid {
+    @include grid(8);
+  }
+
+  .cell {
+    &-1-tablet {
+      grid-column: span 1;
+    }
+
+    &-2-tablet {
+      grid-column: span 2;
+    }
+
+    &-3-tablet {
+      grid-column: span 3;
+    }
+
+    &-4-tablet {
+      grid-column: span 4;
+    }
+
+    &-5-tablet {
+      grid-column: span 5;
+    }
+
+    &-6-tablet {
+      grid-column: span 6;
+    }
+
+    &-7-tablet {
+      grid-column: span 7;
+    }
+
+    &-8-tablet {
+      grid-column: span 8;
+    }
+  }
+}
+
+@include responsive-media($for-tablet-landscape-up) {
+  .cell {
+    &-1-tablet-landscape {
+      grid-column: span 1;
+    }
+
+    &-2-tablet-landscape {
+      grid-column: span 2;
+    }
+
+    &-3-tablet-landscape {
+      grid-column: span 3;
+    }
+
+    &-4-tablet-landscape {
+      grid-column: span 4;
+    }
+
+    &-5-tablet-landscape {
+      grid-column: span 5;
+    }
+
+    &-6-tablet-landscape {
+      grid-column: span 6;
+    }
+
+    &-7-tablet-landscape {
+      grid-column: span 7;
+    }
+
+    &-8-tablet-landscape {
+      grid-column: span 8;
+    }
+  }
+}
+
+@include responsive-media($for-desktop-up) {
+  .container,
+  .grid {
+    padding: 0 72px;
+    max-width: 824px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .grid {
+    @include grid(8);
+  }
+
+  .cell {
+    &-1-tablet {
+      grid-column: span 1;
+    }
+
+    &-2-tablet {
+      grid-column: span 2;
+    }
+
+    &-3-tablet {
+      grid-column: span 3;
+    }
+
+    &-4-tablet {
+      grid-column: span 4;
+    }
+
+    &-5-tablet {
+      grid-column: span 5;
+    }
+
+    &-6-tablet {
+      grid-column: span 6;
+    }
+
+    &-7-tablet {
+      grid-column: span 7;
+    }
+
+    &-8-tablet {
+      grid-column: span 8;
+    }
+  }
+}

@@ -5,27 +5,26 @@
   box-sizing: border-box;
   grid-template-columns: repeat($cols, 1fr);
   grid-column-gap: 24px;
-}
+  .aling-center {
+    align-self: center;
+  }
 
-.aling-center {
-  align-self: center;
-}
+  .aling-bottom {
+    align-self: end;
+  }
 
-.aling-bottom {
-  align-self: end;
-}
+  .justify-center {
+    justify-self: center;
+  }
 
-.justify-center {
-  justify-self: center;
-}
+  .justify-right {
+    justify-self: right;
+  }
 
-.justify-right {
-  justify-self: right;
-}
-
-&.inner-grid {
-  padding: 0;
-  grid-column-gap: 0;
+  &.inner-grid {
+    padding: 0;
+    grid-column-gap: 0;
+  }
 }
 
 .container,
@@ -141,46 +140,95 @@
 @include responsive-media($for-desktop-up) {
   .container,
   .grid {
-    padding: 0 72px;
-    max-width: 824px;
+    padding: 0 124px;
+    max-width: 1280px;
     margin: 0 auto;
     box-sizing: border-box;
   }
   .grid {
-    @include grid(8);
+    @include grid(12);
+  }
+
+  .no-desktop {
+    display: none;
   }
 
   .cell {
-    &-1-tablet {
+    &-1-desktop {
       grid-column: span 1;
     }
 
-    &-2-tablet {
+    &-2-desktop {
       grid-column: span 2;
     }
 
-    &-3-tablet {
+    &-3-desktop {
       grid-column: span 3;
     }
 
-    &-4-tablet {
+    &-4-desktop {
       grid-column: span 4;
     }
 
-    &-5-tablet {
+    &-5-desktop {
       grid-column: span 5;
     }
 
-    &-6-tablet {
+    &-6-desktop {
       grid-column: span 6;
     }
 
-    &-7-tablet {
+    &-7-desktop {
       grid-column: span 7;
     }
 
-    &-8-tablet {
+    &-8-desktop {
       grid-column: span 8;
     }
+
+    &-9-desktop {
+      grid-column: span 9;
+    }
+
+    &-10-desktop {
+      grid-column: span 10;
+    }
+
+    &-11-desktop {
+      grid-column: span 11;
+    }
+
+    &-12-desktop {
+      grid-column: span 12;
+    }
+  }
+}
+
+@include responsive-media($for-phone-only) {
+  .no-phone {
+    display: none;
+  }
+}
+
+@include responsive-media($for-tablet-portrait-only) {
+  .no-tablet {
+    display: none;
+  }
+}
+
+@include responsive-media($for-tablet-landscape-only) {
+  .no-tablet {
+    &:not(.show-tablet-landscape) {
+      display: none;
+    }
+  }
+  .no-tablet-landscape {
+    display: none;
+  }
+}
+
+@include responsive-media($for-desktop-only) {
+  .no-desktop {
+    display: none;
   }
 }

@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class BannerHomeComponent implements OnInit {
   @Input() url: string = '';
-
+  @Input() imgHome: string = '';
   constructor() {}
 
   ngOnInit(): void {}

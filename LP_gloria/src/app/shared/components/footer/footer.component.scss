@@ -1,0 +1,138 @@
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #602367;
+
+  .content-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .content-footer-left {
+    display: flex;
+    flex-direction: column;
+
+    .img-gloria {
+      position: relative;
+      bottom: 20px;
+    }
+
+    .logo-gloria {
+      width: 250px;
+    }
+
+    .copy {
+      color: white;
+    }
+  }
+
+  .content-footer-rigth {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      margin-top: 30px;
+      width: 500px;
+      font-size: 52px;
+      font-weight: 700;
+      line-height: 56px;
+      text-decoration: underline;
+      color: #ffca05;
+      margin-bottom: 25px;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin-bottom: 30px;
+
+      input {
+        width: 100%;
+        height: 50px;
+        color: white;
+
+        &:-moz-placeholder {
+          color: blue;
+        }
+      }
+
+      h1 {
+        font-size: 52px;
+        font-weight: 700;
+        line-height: 56px;
+        color: #ffca05;
+        width: 500px;
+        text-decoration: underline;
+        margin-top: 30px;
+      }
+    }
+  }
+
+  .btn-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    width: 164px;
+    height: 40px;
+    border-style: none;
+    color: white;
+    background-color: #8a4192;
+    font-size: 20px;
+    border-radius: 50px;
+    text-align: center;
+
+    cursor: pointer;
+  }
+
+  .row {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    height: 5px;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 27px;
+    border-radius: 50px;
+  }
+
+  .intern-content-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    .intern-content-footer-left {
+      display: flex;
+      flex-direction: column;
+      h4 {
+        color: white;
+        font-size: 24px;
+        margin-bottom: 30px;
+      }
+      .social-media {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        img {
+          width: 55px;
+          gap: 40px;
+        }
+      }
+    }
+    .intern-content-footer-right {
+      h2 {
+        color: white;
+        font-size: 24px;
+      }
+      h3 {
+        span {
+          font-size: 24px;
+          color: #ffca05;
+        }
+        color: #fff;
+        font-size: 16px;
+      }
+    }
+  }
+}

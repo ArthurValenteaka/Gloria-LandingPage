@@ -13,6 +13,7 @@ import { AnalyticsHomeComponent } from './components/analytics-home/analytics-ho
 import { AboutGloriaComponent } from './components/about-gloria/about-gloria.component';
 import { SponsorAreaComponent } from './components/sponsor-area/sponsor-area.component';
 import { CultureInfoComponent } from './components/culture-info/culture-info.component';
+import { OurProjectsComponent } from './components/our-projects/our-projects.component';
 
 const Components = [
   BannerHomeComponent,
@@ -21,7 +22,8 @@ const Components = [
   HeaderComponent,
   AnalyticsHomeComponent,
   SponsorAreaComponent,
-  CultureInfoComponent
+  CultureInfoComponent,
+  OurProjectsComponent
 ];
 
 const Angular = [MatButtonModule, MatFormFieldModule, MatInputModule];
@@ -29,7 +31,7 @@ const Angular = [MatButtonModule, MatFormFieldModule, MatInputModule];
 const External = [PortalModule];
 
 @NgModule({
-  declarations: [Components, ],
+  declarations: [Components],
   imports: [Angular, External, CommonModule, RouterModule],
   exports: Components,
 })

@@ -15,6 +15,7 @@ import { SponsorAreaComponent } from './components/sponsor-area/sponsor-area.com
 import { CultureInfoComponent } from './components/culture-info/culture-info.component';
 import { OurProjectsComponent } from './components/our-projects/our-projects.component';
 import { HowHelpComponent } from './components/how-help/how-help.component';
+import { VideoManifastComponent } from './components/video-manifast/video-manifast.component';
 
 const Components = [
   BannerHomeComponent,
@@ -26,6 +27,7 @@ const Components = [
   CultureInfoComponent,
   OurProjectsComponent,
   HowHelpComponent
+  VideoManifastComponent,
 ];
 
 const Angular = [MatButtonModule, MatFormFieldModule, MatInputModule];

@@ -1,132 +1,50 @@
 <h1>Conheça nossos projetos</h1>
 
 <div class="carousel-project">
-    <div class="carousel-counter">
-        <h2>Pilar 1</h2>
-        <img src="/assets/img/projects/carousel-counter.svg" alt="Círculo do carrossel">
+  <div class="carousel-counter">
+    <h2>Pilar 1</h2>
+    <img
+      src="/assets/img/projects/carousel-counter.svg"
+      alt="Círculo do carrossel"
+    />
+  </div>
+
+  <div class="projects">
+    <div *ngFor="let item of projects" class="card">
+      <div class="card-img">
+        <img
+          src="{{item.imgProjects}}"
+          alt="Imagem do projeto"
+        />
+      </div>
+      <div class="card-info">
+        <h2>{{item.title}}</h2>
+        <h3>
+          {{item.decription}}
+        </h3>
+      </div>
     </div>
-
-    <div class="projects">
-        <div class="card">
-            <div class="card-img">
-                <img src="/assets/img/projects/project-img.svg" alt="Imagem do projeto">
-            </div>
-            <div class="card-info">
-                <h2>Nome</h2>
-                <h3>Descrição Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-img">
-                <img src="/assets/img/projects/project-img.svg" alt="Imagem do projeto">
-            </div>
-            <div class="card-info">
-                <h2>Nome</h2>
-                <h3>Descrição Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-img">
-                <img src="/assets/img/projects/project-img.svg" alt="Imagem do projeto">
-            </div>
-            <div class="card-info">
-                <h2>Nome</h2>
-                <h3>Descrição Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-            </div>
-        </div>
-    </div>
-
-    <div class="carousel-counter">
-        <h2>Pilar 2</h2>
-        <img src="/assets/img/projects/carousel-counter.svg" alt="Círculo do carrossel">
-    </div>
-
-    <div class="projects">
-        <div class="card">
-            <div class="card-img">
-                <img src="/assets/img/projects/project-img.svg" alt="Imagem do projeto">
-            </div>
-            <div class="card-info">
-                <h2>Nome</h2>
-                <h3>Descrição Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-img">
-                <img src="/assets/img/projects/project-img.svg" alt="Imagem do projeto">
-            </div>
-            <div class="card-info">
-                <h2>Nome</h2>
-                <h3>Descrição Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-img">
-                <img src="/assets/img/projects/project-img.svg" alt="Imagem do projeto">
-            </div>
-            <div class="card-info">
-                <h2>Nome</h2>
-                <h3>Descrição Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-            </div>
-        </div>
-    </div>
-
-    <div class="carousel-counter">
-        <h2>Pilar 3</h2>
-        <img src="/assets/img/projects/carousel-counter.svg" alt="Círculo do carrossel">
-    </div>
-
-    <div class="projects">
-        <div class="card">
-            <div class="card-img">
-                <img src="/assets/img/projects/project-img.svg" alt="Imagem do projeto">
-            </div>
-            <div class="card-info">
-                <h2>Nome</h2>
-                <h3>Descrição Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-img">
-                <img src="/assets/img/projects/project-img.svg" alt="Imagem do projeto">
-            </div>
-            <div class="card-info">
-                <h2>Nome</h2>
-                <h3>Descrição Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-img">
-                <img src="/assets/img/projects/project-img.svg" alt="Imagem do projeto">
-            </div>
-            <div class="card-info">
-                <h2>Nome</h2>
-                <h3>Descrição Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-            </div>
-        </div>
-    </div>
+  </div>
 </div>
 
 <div class="partnership">
-    <div class="left-content">
-        <div class="title">
-            <h1>Como fazer uma parceria com a gente</h1>
-        </div>
-
-        <div class="text">
-            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor placerat varius ac pellentesque sit sed sit ornare ullamcorper. Nulla lorem nisi, et adipiscing enim in enim, nunc.</h3>
-        </div>
+  <div class="left-content">
+    <div class="title">
+      <h1>Como fazer uma parceria com a gente</h1>
     </div>
 
-    <div class="right-content">
-        <button mat-button>
-            <h4>SAIBA MAIS</h4>
-        </button>
+    <div class="text">
+      <h3>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor
+        placerat varius ac pellentesque sit sed sit ornare ullamcorper. Nulla
+        lorem nisi, et adipiscing enim in enim, nunc.
+      </h3>
     </div>
+  </div>
+
+  <div class="right-content">
+    <button mat-button>
+      <h4>SAIBA MAIS</h4>
+    </button>
+  </div>
 </div>

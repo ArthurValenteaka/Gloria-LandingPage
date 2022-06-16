@@ -1,3 +1,4 @@
+import { VideoManifastComponent } from './components/video-manifast/video-manifast.component';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -15,7 +16,6 @@ import { SponsorAreaComponent } from './components/sponsor-area/sponsor-area.com
 import { CultureInfoComponent } from './components/culture-info/culture-info.component';
 import { OurProjectsComponent } from './components/our-projects/our-projects.component';
 import { HowHelpComponent } from './components/how-help/how-help.component';
-import { VideoManifastComponent } from './components/video-manifast/video-manifast.component';
 
 const Components = [
   BannerHomeComponent,
@@ -26,7 +26,7 @@ const Components = [
   SponsorAreaComponent,
   CultureInfoComponent,
   OurProjectsComponent,
-  HowHelpComponent
+  HowHelpComponent,
   VideoManifastComponent,
 ];
 

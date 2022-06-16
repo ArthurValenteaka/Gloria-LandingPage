@@ -14,6 +14,7 @@ import { AboutGloriaComponent } from './components/about-gloria/about-gloria.com
 import { SponsorAreaComponent } from './components/sponsor-area/sponsor-area.component';
 import { CultureInfoComponent } from './components/culture-info/culture-info.component';
 import { OurProjectsComponent } from './components/our-projects/our-projects.component';
+import { HowHelpComponent } from './components/how-help/how-help.component';
 import { VideoManifastComponent } from './components/video-manifast/video-manifast.component';
 
 const Components = [
@@ -25,6 +26,7 @@ const Components = [
   SponsorAreaComponent,
   CultureInfoComponent,
   OurProjectsComponent,
+  HowHelpComponent
   VideoManifastComponent,
 ];
 

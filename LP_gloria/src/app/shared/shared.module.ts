@@ -16,6 +16,10 @@ import { SponsorAreaComponent } from './components/sponsor-area/sponsor-area.com
 import { CultureInfoComponent } from './components/culture-info/culture-info.component';
 import { OurProjectsComponent } from './components/our-projects/our-projects.component';
 import { HowHelpComponent } from './components/how-help/how-help.component';
+import { PartnershipComponent } from './components/partnership/partnership.component';
+import { HowKnowSignsComponent } from './components/how-know-signs/how-know-signs.component';
+import { PartnerComponent } from './components/partner/partner.component';
+import { ReportsComponent } from './components/reports/reports.component';
 
 const Components = [
   BannerHomeComponent,
@@ -28,6 +32,10 @@ const Components = [
   OurProjectsComponent,
   HowHelpComponent,
   VideoManifastComponent,
+  PartnershipComponent,
+  HowKnowSignsComponent,
+  PartnerComponent,
+  ReportsComponent,
 ];
 
 const Angular = [MatButtonModule, MatFormFieldModule, MatInputModule];

@@ -1,0 +1,64 @@
+.face-owners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  margin-bottom: 60px;
+  .title {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+    text-align: center;
+  }
+  .list-faces {
+    width: 80%;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+    overflow: hidden;
+
+    .item {
+      max-width: 233px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .img-owner {
+        width: 233px;
+        height: 233px;
+        border-radius: 200px;
+        margin-bottom: 24px;
+      }
+      .description-owner {
+        .name {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 121.3%;
+          text-align: center;
+          color: #602367;
+        }
+        .occupation {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 121.3%;
+          text-align: center;
+          color: #000000;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+        }
+      }
+    }
+  }
+}

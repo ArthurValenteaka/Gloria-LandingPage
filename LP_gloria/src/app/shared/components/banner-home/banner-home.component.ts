@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -8,7 +9,17 @@ import { Component, Input, OnInit } from '@angular/core';
 export class BannerHomeComponent implements OnInit {
   @Input() url: string = '';
   @Input() imgHome: string = '';
-  constructor() {}
+  @Input() firstParagraph: string = '';
+  @Input() seccondParagraph: string = '';
+  @Input() thirdParagraph: string = '';
+  @Input() seccondText: string = '';
+  @Input() backgroudColor: string = '#FFCA05';
+  voluntaryPage = false;
+  constructor(public router: Router) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if (this.router.url === '/home/voluntario') {
+      this.voluntaryPage = true;
+    }
+  }
 }

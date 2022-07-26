@@ -22,6 +22,7 @@ import { PartnerComponent } from './components/partner/partner.component';
 import { ReportsComponent } from './components/reports/reports.component';
 import { FormAccessComponent } from './components/form-access/form-access.component';
 import { FaceOwnersComponent } from './components/face-owners/face-owners.component';
+import { SliceGaleryComponent } from './components/slice-galery/slice-galery.component';
 
 const Components = [
   BannerHomeComponent,
@@ -40,6 +41,7 @@ const Components = [
   ReportsComponent,
   FormAccessComponent,
   FaceOwnersComponent,
+  SliceGaleryComponent,
 ];
 
 const Angular = [MatButtonModule, MatFormFieldModule, MatInputModule];

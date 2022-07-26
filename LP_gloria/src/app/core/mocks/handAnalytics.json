@@ -1,7 +1,7 @@
 {
   "response": [
     {
-      "title": "xerequinha",
+      "title": "nome",
       "imgProject": "assets/img/home-backgr-2.png",
       "decription": "Descrição Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
@@ -13,26 +13,6 @@
     {
       "title": "nome",
       "imgProject": "/assets/img/home-backgr-2.png",
-      "decription": "Descrição Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-      "title": "nome",
-      "imgProject": "assets/img/home-backgr-2.png",
-      "decription": "Descrição Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-      "title": "nome",
-      "imgProject": "assets/img/home-backgr-2.png",
-      "decription": "Descrição Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-      "title": "nome",
-      "imgProject": "assets/img/home-backgr-2.png",
-      "decription": "Descrição Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-      "title": "nome",
-      "imgProject": "assets/img/home-backgr-2.png",
       "decription": "Descrição Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     }
   ]

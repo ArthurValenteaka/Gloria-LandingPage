@@ -16,13 +16,31 @@
       </div>
     </div>
     <div class="content-right">
-      <img src="{{imgHome}}" alt="" />
+      <img src="{{ imgHome }}" alt="imgHome" />
       <div>
-        <span><h4>CHEGAMOS PARA ACABAR</h4></span>
-        <span><h4>COM A VIOLÊNCIA CONTRA</h4></span>
-        <span><h4>A MULHER</h4></span>
+        <span *ngIf="firstParagraph"
+          ><h4
+            [ngClass]="voluntaryPage ? 'text-home-voluntary' : 'text-home'"
+          >
+            {{ firstParagraph }}
+          </h4></span
+        >
+        <span *ngIf="seccondParagraph"
+          ><h4
+            [ngClass]="voluntaryPage ? 'text-home-voluntary' : 'text-home'"
+          >
+            {{ seccondParagraph }}
+          </h4></span
+        >
+        <span *ngIf="thirdParagraph"
+          ><h4
+            [ngClass]="voluntaryPage ? 'text-home-voluntary' : 'text-home'"
+          >
+            {{ thirdParagraph }}
+          </h4></span
+        >
       </div>
-      <h5>SOMOS GLÓRIA.</h5>
+      <h5 *ngIf="seccondText">{{ seccondText }}</h5>
     </div>
   </div>
 </div>

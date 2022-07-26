@@ -1,8 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
-
-import * as owners from '../../core/mocks/mockOwners.json';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -15,6 +13,6 @@ export class AboutHerService {
   constructor(private http: HttpClient) {}
 
   getOwners(): Observable<any> {
-    return of(owners);
+    return this.http.get('assets/mocks/mockOwners.json');
   }
 }

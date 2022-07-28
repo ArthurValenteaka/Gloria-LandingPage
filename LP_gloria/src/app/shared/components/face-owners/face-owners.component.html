@@ -1,0 +1,12 @@
+<div class="face-owners">
+  <div class="title">Quem são os rostos por trás do projeto?</div>
+  <div class="list-faces">
+    <div *ngFor="let item of owners.slice(0, 4)" class="item">
+      <img class="img-owner" src="{{ item.image }}" alt="" />
+      <div class="description-owner">
+        <div class="name">{{ item.name }}</div>
+        <div class="occupation">{{ item.occupation }}</div>
+      </div>
+    </div>
+  </div>
+</div>

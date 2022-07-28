@@ -1,0 +1,10 @@
+<div class="slice-galery">
+  <div class="slice-galery-title">
+    Galeria de fotos
+  </div>
+  <div class="galery-carousel">
+    <div *ngFor="let item of galeryImages.slice(0,3)" class="item-galery">
+      <img class="item-galery-image" src="{{ item.imgProject }}" alt="" />
+    </div>
+  </div>
+</div>

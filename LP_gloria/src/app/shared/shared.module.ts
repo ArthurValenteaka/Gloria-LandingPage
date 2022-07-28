@@ -23,6 +23,7 @@ import { ReportsComponent } from './components/reports/reports.component';
 import { FormAccessComponent } from './components/form-access/form-access.component';
 import { FaceOwnersComponent } from './components/face-owners/face-owners.component';
 import { SliceGaleryComponent } from './components/slice-galery/slice-galery.component';
+import { SwiperModule } from 'swiper/angular';
 
 const Components = [
   BannerHomeComponent,
@@ -44,7 +45,7 @@ const Components = [
   SliceGaleryComponent,
 ];
 
-const Angular = [MatButtonModule, MatFormFieldModule, MatInputModule];
+const Angular = [MatButtonModule, MatFormFieldModule, MatInputModule,SwiperModule];
 
 const External = [PortalModule];
 

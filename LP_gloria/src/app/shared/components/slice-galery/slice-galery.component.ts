@@ -1,7 +1,6 @@
 import { GaleryService } from './../../services/galery.service';
 import { Subscription, Subject, takeUntil } from 'rxjs';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { SwiperComponent } from 'swiper/angular';
 import { Navigation,Pagination } from 'swiper';
 import SwiperCore from 'swiper';
 

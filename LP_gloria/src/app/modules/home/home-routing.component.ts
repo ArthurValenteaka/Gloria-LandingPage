@@ -15,22 +15,22 @@ const routes: Routes = [
   {
     path: 'ajude',
     loadChildren: () => import('./../help/help.module').then(e => e.HelpModule),
-    pathMatch: 'full',
+    data : {currentPage:'ajude'}
   },
   {
     path: 'sobre',
     loadChildren: () => import('./../about-her/about-her.module').then(e => e.AboutHerModule),
-    pathMatch: 'full',
+    data : {currentPage:'sobre'}
   },
   {
     path: 'voluntario',
     loadChildren: () => import('./../voluntary/voluntary.module').then(e => e.VoluntaryModule),
-    pathMatch: 'full',
+    data : {currentPage:'voluntario'}
   },
   {
     path: 'projetos',
     loadChildren: () => import('./../projects/projects.module').then(e => e.ProjectsModule),
-    pathMatch: 'full',
+    data : {currentPage:'projetos'}
   },
 ];
 

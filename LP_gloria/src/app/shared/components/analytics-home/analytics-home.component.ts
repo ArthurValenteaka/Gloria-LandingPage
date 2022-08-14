@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-analytics-home',
   templateUrl: './analytics-home.component.html',
-  styleUrls: ['./analytics-home.component.scss']
+  styleUrls: ['./analytics-home.component.scss'],
 })
 export class AnalyticsHomeComponent implements OnInit {
+  @Input() analytics: any;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

@@ -1,20 +1,19 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit, OnChanges, SimpleChanges } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
+  navbarColored: boolean = false;
 
-  rota:any = Router
+  currentPage = this.route.url
 
-  constructor(route:Router) { }
+  constructor(private route: ActivatedRoute, ) {}
 
   ngOnInit(): void {
-    console.log(this.rota);
-
   }
 
 }

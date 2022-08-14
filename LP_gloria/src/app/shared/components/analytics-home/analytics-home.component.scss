@@ -1,81 +1,89 @@
+.arrow-top {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid #602367;
+  display: none;
+}
+
 .analytics-home {
-  background-color: #612368;
-  height: 700px;
-  padding-left: 100px;
-  padding-right: 100px;
-  .hands {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  // background-color: #602367;
+  height: 100%;
+  max-height: 85vh;
+  .analytics-item {
     width: 100%;
-    height: 700px;
+    height: 100%;
+    background-size: cover;
+    background-position: initial;
+    background-repeat: no-repeat;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    text-align: center;
-    color: white;
-    .hand-left {
-      background: url(/assets/img/analytics/hand1.png) no-repeat center;
-      background-size: contain;
+    .intern-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
       width: 100%;
-      div {
-        padding: 74px;
-        height: fit-content;
-        background: #602367;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 53px;
-        line-height: 58px;
+      height: 100%;
+      background: #6023676b;
+      .text-card {
         display: flex;
-        flex-direction: column;
         align-items: center;
         text-align: center;
+        width: 399px;
+        height: 356px;
+        color: white;
+        ::ng-deep {
+          h5 {
+            font-family: "Archivo";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 53px;
+            line-height: 58px;
+          }
+        }
       }
-    }
-    .hand-center {
-      background: url(/assets/img/analytics/hand2.png) no-repeat center;
-      background-size: contain;
-      width: 100%;
-      div {
-        padding: 74px;
-        background: #61236859;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 53px;
-        line-height: 58px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-    }
-    .hand-right {
-      background: url(/assets/img/analytics/hand3.png) no-repeat center;
-      background-size: contain;
-      width: 100%;
-      div {
-        padding: 74px;
-        background: #61236859;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 53px;
-        line-height: 58px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-    }
-    :hover {
       button {
-        display: block;
+        width: 215px;
+        border-radius: 25px;
+        height: 65px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 121.3%;
+        background-color: #602367;
+        box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.25);
+        color: white;
       }
     }
   }
-  button {
-    display: none;
-    color: black;
-    background-color: white;
-    width: 150px;
-    margin-top: 20px;
-    border-radius: 25px;
-    box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.25);
+  :nth-child(odd) {
+    .intern-card {
+      background: #602367d7;
+      button{
+        background-color: white;
+        color: black;
+      }
+    }
+
+  }
+  :nth-child(2n) {
+    z-index: 40;
+    position: relative;
+    .arrow-top {
+      position: absolute;
+      display: block;
+      opacity: 1;
+    }
   }
 }

@@ -7,10 +7,6 @@ ul {
   list-style: none;
   justify-content: space-around;
 
-  img {
-    margin-top: 15px;
-  }
-
   li {
     font-size: 20px;
     font-weight: 500;
@@ -25,7 +21,7 @@ ul {
 }
 
 .header-bar {
-  position: fixed;
+  position: absolute;
   z-index: 99;
 }
 
@@ -40,7 +36,7 @@ ul {
 }
 
 .header-bar {
-  background-image: linear-gradient(#a23fe07e, transparent);
+  background-image: linear-gradient(#a23fe085, transparent);
   width: 100%;
   height: 20vh;
 }

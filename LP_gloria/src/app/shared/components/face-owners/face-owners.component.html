@@ -1,12 +1,38 @@
-<div class="face-owners">
-  <div class="title">Quem são os rostos por trás do projeto?</div>
-  <div class="list-faces">
-    <div *ngFor="let item of owners.slice(0, 4)" class="item">
-      <img class="img-owner" src="{{ item.image }}" alt="" />
-      <div class="description-owner">
-        <div class="name">{{ item.name }}</div>
-        <div class="occupation">{{ item.occupation }}</div>
-      </div>
-    </div>
+<div class="face-owners grid">
+  <div class="title cell-4-phone cell-8-tablet cell-12-desktop">
+    Quem são os rostos por trás do projeto?
+  </div>
+  <div class="list-faces no-phone no-tablet cell-12-desktop">
+    <swiper
+      [spaceBetween]="70"
+      [slidesPerView]="4"
+      [navigation]="true"
+      class="mySwiper"
+    >
+      <ng-template class="item-owner" swiperSlide *ngFor="let item of owners">
+        <img class="img-owner" src="{{ item.image }}" alt="" />
+        <div class="description-owner">
+          <div class="name">{{ item.name }}</div>
+          <div class="occupation">{{ item.occupation }}</div>
+        </div>
+      </ng-template>
+    </swiper>
+  </div>
+  <div class="list-faces-mobile cell-4-phone cell-8-tablet no-desktop">
+    <swiper
+      [spaceBetween]="500"
+      [pagination]="{
+        dynamicBullets: true
+      }"
+      class="mySwiper"
+    >
+      <ng-template class="item-owner" swiperSlide *ngFor="let item of owners">
+        <img class="img-owner" src="{{ item.image }}" alt="" />
+        <div class="description-owner">
+          <div class="name">{{ item.name }}</div>
+          <div class="occupation">{{ item.occupation }}</div>
+        </div>
+      </ng-template>
+    </swiper>
   </div>
 </div>

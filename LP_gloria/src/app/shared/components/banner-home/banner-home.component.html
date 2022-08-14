@@ -1,11 +1,31 @@
 <div
   class="banner-home"
-  style="background: url({{url}}) no-repeat center center ;
-  min-height: 90vh;
-  min-width: 100%;
+  style="background: url({{url}});
   background-size: cover;"
 >
-  <div class="banner-content">
+  <div class="banner-content grid inner-grid">
+    <div class="front-group cell-4-phone cell-8-tablet cell-12-desktop">
+      <div class="content-right">
+      <img src="{{ imgHome }}" alt="imgHome" />
+      <div>
+        <span *ngIf="firstParagraph"
+          ><h1 [ngClass]="voluntaryPage ? 'text-home-voluntary' : 'text-home'">
+            {{ firstParagraph }}
+          </h1></span
+        >
+        <span *ngIf="seccondParagraph"
+          ><h4 [ngClass]="voluntaryPage ? 'text-home-voluntary' : 'text-home'">
+            {{ seccondParagraph }}
+          </h4></span
+        >
+        <span *ngIf="thirdParagraph"
+          ><h4 [ngClass]="voluntaryPage ? 'text-home-voluntary' : 'text-home'">
+            {{ thirdParagraph }}
+          </h4></span
+        >
+      </div>
+      <h5 *ngIf="seccondText">{{ seccondText }}</h5>
+    </div>
     <div class="content-left">
       <div>
         <button mat-button>
@@ -15,32 +35,7 @@
         <button mat-button>DOE AGORA</button>
       </div>
     </div>
-    <div class="content-right">
-      <img src="{{ imgHome }}" alt="imgHome" />
-      <div>
-        <span *ngIf="firstParagraph"
-          ><h4
-            [ngClass]="voluntaryPage ? 'text-home-voluntary' : 'text-home'"
-          >
-            {{ firstParagraph }}
-          </h4></span
-        >
-        <span *ngIf="seccondParagraph"
-          ><h4
-            [ngClass]="voluntaryPage ? 'text-home-voluntary' : 'text-home'"
-          >
-            {{ seccondParagraph }}
-          </h4></span
-        >
-        <span *ngIf="thirdParagraph"
-          ><h4
-            [ngClass]="voluntaryPage ? 'text-home-voluntary' : 'text-home'"
-          >
-            {{ thirdParagraph }}
-          </h4></span
-        >
-      </div>
-      <h5 *ngIf="seccondText">{{ seccondText }}</h5>
     </div>
+
   </div>
 </div>

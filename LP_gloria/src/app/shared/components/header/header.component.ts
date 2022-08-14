@@ -14,8 +14,6 @@ export class HeaderComponent implements OnInit {
   constructor(private route: ActivatedRoute, ) {}
 
   ngOnInit(): void {
-    console.log(this.route);
-
   }
 
 }

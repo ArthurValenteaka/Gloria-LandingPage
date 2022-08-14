@@ -1,6 +1,6 @@
 <div
   class="banner-home"
-  style="background: url({{url}}) no-repeat center center ;
+  style="background: url({{url}});
   background-size: cover;"
 >
   <div class="banner-content grid inner-grid">
@@ -9,9 +9,9 @@
       <img src="{{ imgHome }}" alt="imgHome" />
       <div>
         <span *ngIf="firstParagraph"
-          ><h4 [ngClass]="voluntaryPage ? 'text-home-voluntary' : 'text-home'">
+          ><h1 [ngClass]="voluntaryPage ? 'text-home-voluntary' : 'text-home'">
             {{ firstParagraph }}
-          </h4></span
+          </h1></span
         >
         <span *ngIf="seccondParagraph"
           ><h4 [ngClass]="voluntaryPage ? 'text-home-voluntary' : 'text-home'">

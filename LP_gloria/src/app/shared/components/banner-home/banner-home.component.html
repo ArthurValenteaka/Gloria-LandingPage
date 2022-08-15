@@ -1,12 +1,12 @@
 <div
   class="banner-home"
-  style="background: url({{url}});
+  style="background-image: url({{url}});
   background-size: cover;"
 >
   <div class="banner-content grid inner-grid">
     <div class="front-group cell-4-phone cell-8-tablet cell-12-desktop">
       <div class="content-right">
-      <img src="{{ imgHome }}" alt="imgHome" />
+      <img class="no-phone" src="{{ imgHome }}" alt="imgHome" />
       <div>
         <span *ngIf="firstParagraph"
           ><h1 [ngClass]="voluntaryPage ? 'text-home-voluntary' : 'text-home'">

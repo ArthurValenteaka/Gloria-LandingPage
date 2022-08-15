@@ -206,29 +206,29 @@
 
 @include responsive-media($for-phone-only) {
   .no-phone {
-    display: none;
+    display: none !important;
   }
 }
 
 @include responsive-media($for-tablet-portrait-only) {
   .no-tablet {
-    display: none;
+    display: none !important;
   }
 }
 
 @include responsive-media($for-tablet-landscape-only) {
   .no-tablet {
     &:not(.show-tablet-landscape) {
-      display: none;
+      display: none !important;
     }
   }
   .no-tablet-landscape {
-    display: none;
+    display: none !important;
   }
 }
 
 @include responsive-media($for-desktop-only) {
   .no-desktop {
-    display: none;
+    display: none !important;
   }
 }

@@ -24,6 +24,7 @@ import { FormAccessComponent } from './components/form-access/form-access.compon
 import { FaceOwnersComponent } from './components/face-owners/face-owners.component';
 import { SliceGaleryComponent } from './components/slice-galery/slice-galery.component';
 import { SwiperModule } from 'swiper/angular';
+import { HamburguerMenuComponent } from './components/hamburguer-menu/hamburguer-menu.component';
 
 const Components = [
   BannerHomeComponent,
@@ -43,9 +44,15 @@ const Components = [
   FormAccessComponent,
   FaceOwnersComponent,
   SliceGaleryComponent,
+  HamburguerMenuComponent,
 ];
 
-const Angular = [MatButtonModule, MatFormFieldModule, MatInputModule,SwiperModule];
+const Angular = [
+  MatButtonModule,
+  MatFormFieldModule,
+  MatInputModule,
+  SwiperModule,
+];
 
 const External = [PortalModule];
 

@@ -11,5 +11,8 @@ export class AnalyticsService {
 
   getAnalytics():Observable<any> {
     return this.http.get('assets/mocks/analytics.json')
+    // return this.http.get<any[]>(
+    //   `${environment.SERVER_URL}instituto-gloria/colaboradores/selecionarTodos`
+    // );
   }
 }

@@ -9,11 +9,11 @@
       <i class="material-icons">{{ isMenuOpen ? "close" : "menu" }}</i>
     </li>
     <li class="menu" [class.is-open]="isMenuOpen">
-      <a class="menu-item" [routerLink]="''">Início</a>
-      <a class="menu-item" [routerLink]="'home/sobre'">Quem é Glória</a>
-      <a class="menu-item" [routerLink]="'home/ajude'">Ajuda</a>
-      <a class="menu-item" [routerLink]="'home/projetos'">Projetos</a>
-      <a class="menu-item" [routerLink]="'home/voluntario'">Seja Voluntário</a>
+      <a class="menu-item" (click)="toggleMenu()" [routerLink]="''">Início</a>
+      <a class="menu-item" (click)="toggleMenu()" [routerLink]="'home/sobre'">Quem é Glória</a>
+      <a class="menu-item" (click)="toggleMenu()" [routerLink]="'home/ajude'">Ajuda</a>
+      <a class="menu-item" (click)="toggleMenu()" [routerLink]="'home/projetos'">Projetos</a>
+      <a class="menu-item" (click)="toggleMenu()" [routerLink]="'home/voluntario'">Seja Voluntário</a>
     </li>
   </ul>
 </nav>

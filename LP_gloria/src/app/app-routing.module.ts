@@ -10,9 +10,10 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule),
-    data:{
-      currentRoute:'home'
-    }
+  },
+  {
+    path: 'rock-in-rio',
+    loadChildren: () => import('./modules/rock-in-rio/rock-in-rio.module').then(m => m.RockInRioModule),
   },
 ];
 

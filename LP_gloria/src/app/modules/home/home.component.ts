@@ -32,7 +32,6 @@ export class HomeComponent implements OnInit {
       .pipe(takeUntil(this.unsubscribeAll))
       .subscribe((res: any) => {
         this.analytics = res.response;
-        console.log(this.analytics);
       });
   }
 
@@ -42,7 +41,6 @@ export class HomeComponent implements OnInit {
       .pipe(takeUntil(this.unsubscribeAll))
       .subscribe((res: any) => {
         this.sponsor = res.response;
-        console.log(this.sponsor);
       });
   }
 }

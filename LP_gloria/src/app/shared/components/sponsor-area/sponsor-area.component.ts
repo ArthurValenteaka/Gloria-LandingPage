@@ -20,8 +20,6 @@ export class SponsorAreaComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    console.log(this.sponsor);
-
   }
 
 

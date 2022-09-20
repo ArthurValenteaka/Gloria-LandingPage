@@ -25,7 +25,6 @@ export class ProjectsComponent implements OnInit {
       .pipe(takeUntil(this.unsubscribeAll))
       .subscribe((res: any) => {
         this.projects = res.response;
-        console.log(this.projects);
       });
   }
 }

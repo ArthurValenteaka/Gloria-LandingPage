@@ -1,7 +1,8 @@
-<div class="inner-grid">
-
+<div *ngIf="routeRio !== '/rock-in-rio'" class="inner-grid">
   <app-header class="no-phone cell-8-tablet cell-12-desktop"></app-header>
-  <app-hamburguer-menu class="cell-4-phone no-tablet no-desktop"></app-hamburguer-menu>
+  <app-hamburguer-menu
+    class="cell-4-phone no-tablet no-desktop"
+  ></app-hamburguer-menu>
 </div>
 
 <router-outlet></router-outlet>

@@ -30,7 +30,6 @@ export class SliceGaleryComponent implements OnInit {
       .pipe(takeUntil(this.unsubscribeAll))
       .subscribe((res: any) => {
         this.galeryImages = res.response;
-        console.log(this.galeryImages);
       });
   }
 }

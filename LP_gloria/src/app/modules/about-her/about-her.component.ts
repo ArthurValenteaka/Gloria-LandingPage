@@ -25,7 +25,6 @@ export class AboutHerComponent implements OnInit {
       .pipe(takeUntil(this.unsubscribeAll))
       .subscribe((res: any) => {
         this.owners = res.response;
-        console.log(this.owners);
       });
   }
 }

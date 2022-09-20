@@ -27,7 +27,7 @@ nav {
       display: none;
       align-items: center;
       flex-direction: column;
-      transition: 0.3;
+      transition: 0.3ms;
 
       a {
         text-decoration: none;
@@ -46,7 +46,7 @@ nav {
         padding-top: 20px;
         padding-bottom: 20px;
         z-index: 10;
-        transition: 0.3;
+        transition: 0.3ms;
 
         .menu-item {
           width: 100%;
@@ -63,7 +63,7 @@ nav {
 
   img {
     width: 70px;
-    height: fit-content;
+    height: auto;
     margin-left: 10px;
   }
 }

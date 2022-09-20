@@ -1,3 +1,4 @@
+import { RockInRioModule } from './rock-in-rio/rock-in-rio.module';
 import { HomeModule } from './home/home.module';
 import { HelpModule } from './help/help.module';
 import { AboutHerModule } from './about-her/about-her.module';
@@ -11,14 +12,18 @@ import { SharedModule } from '../shared/shared.module';
     HomeModule,
     SharedModule,
     AboutHerModule,
-    HelpModule
+    HelpModule,
+    RockInRioModule
   ],
   exports: [
     CommonModule,
     HomeModule,
     SharedModule,
     AboutHerModule,
-    HelpModule
+    HelpModule,
+    RockInRioModule
+  ],
+  declarations: [
   ],
 })
 export class ModulesModule {}

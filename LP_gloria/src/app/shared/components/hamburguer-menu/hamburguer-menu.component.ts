@@ -10,7 +10,8 @@ export class HamburguerMenuComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
   toggleMenu():void {
     this.isMenuOpen = !this.isMenuOpen

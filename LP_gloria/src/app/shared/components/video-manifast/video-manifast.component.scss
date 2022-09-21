@@ -54,3 +54,16 @@
     justify-content: center;
   }
 }
+
+@media (max-width:1280px) {
+  .video-incorp {
+    flex-direction: column;
+  }
+  .mold-video{
+    width: 100%;
+  }
+  iframe{
+    max-width: auto !important;
+    width: 100%;
+  }
+}

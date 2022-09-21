@@ -58,7 +58,6 @@
         font-size: 36px;
         background-color: #ffd021;
         padding: 0;
-        border: 5px solid #ffd021;
         border-radius: 20px 26px 20px 90px;
         -webkit-border-radius: 20px 26px 20px 90px;
       }
@@ -94,7 +93,6 @@
   .left-buttons {
     flex-direction: column !important;
     justify-content: center;
-    align-items: center;
   }
 
   .content-right {
@@ -108,7 +106,6 @@
   }
 
   button {
-    height: auto !important;
     width: auto !important;
   }
 }
@@ -127,7 +124,6 @@
   }
 
   button {
-    height: auto !important;
     width: auto !important;
   }
 

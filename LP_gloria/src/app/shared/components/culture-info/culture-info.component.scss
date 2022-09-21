@@ -98,6 +98,8 @@
 }
 
 
-@include responsive-media($for-tablet-portrait-up){
-
+@media (max-width: 1400px){
+  .intern-info {
+    flex-direction: column;
+  }
 }

@@ -12,8 +12,8 @@
     font-size: 26px;
     text-align: center;
     padding-top: 100px;
-    width: 1010px;
     padding-bottom: 60px;
+    padding-inline: 250px;
   }
   .button {
     display: flex;
@@ -47,5 +47,11 @@
     border-top: 45px solid #602367;
     display: flex;
     justify-content: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .introduction {
+    padding-inline: 20px !important;
   }
 }

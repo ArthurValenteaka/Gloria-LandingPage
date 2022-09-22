@@ -20,9 +20,6 @@ export class SponsorAreaComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    console.log(this.sponsor);
-
-    this?.sponsor.sort(() => Math.random() - 0.5)
   }
 
 

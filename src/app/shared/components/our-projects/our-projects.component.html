@@ -1,0 +1,66 @@
+<div class="carousel-project">
+  <div class="carousel-counter">
+    <h2>Pilar 1</h2>
+    <img
+      src="/assets/img/projects/carousel-counter.svg"
+      alt="Círculo do carrossel"
+    />
+  </div>
+  <div class="slice-galery grid inner-grid">
+    <div class="slice-galery-intern no-phone no-tablet cell-12-desktop">
+      <div class="slice-galery-intern-broke">
+        <swiper
+          [spaceBetween]="100"
+          [slidesPerView]="3"
+          [navigation]="true"
+          class="mySwiper"
+        >
+          <ng-template
+            class="item-galery"
+            *ngFor="let item of projects"
+            swiperSlide
+          >
+            <div class="card">
+              <div class="card-img">
+                <img src="{{ item.imgProject }}" alt="Imagem do projeto" />
+              </div>
+              <div class="card-info">
+                <h2>{{ item.title }}</h2>
+                <h3>
+                  {{ item.decription }}
+                </h3>
+              </div>
+            </div>
+          </ng-template>
+        </swiper>
+      </div>
+    </div>
+    <div class="slice-galery-intern cell-4-phone cell-8-tablet no-desktop">
+      <swiper
+        [spaceBetween]="50"
+        [pagination]="{
+          dynamicBullets: true
+        }"
+        class="mySwiper"
+      >
+        <ng-template
+          class="item-galery"
+          *ngFor="let item of projects"
+          swiperSlide
+        >
+          <div class="card">
+            <div class="card-img">
+              <img src="{{ item.imgProject }}" alt="Imagem do projeto" />
+            </div>
+            <div class="card-info">
+              <h2>{{ item.title }}</h2>
+              <h3>
+                {{ item.decription }}
+              </h3>
+            </div>
+          </div>
+        </ng-template>
+      </swiper>
+    </div>
+  </div>
+</div>

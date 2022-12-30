@@ -1,0 +1,8 @@
+{
+  "/api/*": {
+    "target": "https://www.consultacrm.com.br",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}

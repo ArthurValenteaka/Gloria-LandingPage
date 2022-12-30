@@ -1,0 +1,19 @@
+<nav class="menu-hamburguer">
+  <ul>
+    <li class="logo">
+      <a class="logo-bar" href="">
+        <img src="assets/img/gloria-heart.png" alt="" />
+      </a>
+    </li>
+    <li class="burguer" (click)="toggleMenu()">
+      <i class="material-icons">{{ isMenuOpen ? "close" : "menu" }}</i>
+    </li>
+    <li class="menu" [class.is-open]="isMenuOpen">
+      <a class="menu-item" (click)="toggleMenu()" [routerLink]="''">Início</a>
+      <a class="menu-item" (click)="toggleMenu()" [routerLink]="'home/sobre'">Quem é Glória</a>
+      <a class="menu-item" (click)="toggleMenu()" [routerLink]="'home/ajude'">Ajuda</a>
+      <a class="menu-item" (click)="toggleMenu()" [routerLink]="'home/projetos'">Projetos</a>
+      <a class="menu-item" (click)="toggleMenu()" [routerLink]="'home/voluntario'">Seja Voluntário</a>
+    </li>
+  </ul>
+</nav>

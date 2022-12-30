@@ -1,0 +1,175 @@
+@import "src/assets/scss/_responsive-media.scss";
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #602367;
+
+  .content-footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 40px;
+    padding-right: 40px;
+    gap: 40px;
+  }
+
+  .content-footer-left {
+    display: flex;
+    flex-direction: column;
+
+    .img-gloria {
+      position: relative;
+      bottom: 20px;
+    }
+
+    .logo-gloria {
+      width: 250px;
+    }
+
+    .copy {
+      color: white;
+    }
+  }
+
+  .content-footer-rigth {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right:40px ;
+
+    h1 {
+      margin-top: 30px;
+      max-width: 500px;
+      font-size: 52px;
+      font-weight: 700;
+      line-height: 56px;
+      text-decoration: underline;
+      color: #ffca05;
+      margin-bottom: 25px;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin-bottom: 30px;
+      color: white;
+
+      input {
+        width: 100%;
+        height: 50px;
+        color: white;
+        font-size: 20px;
+
+        &:-moz-placeholder {
+          color: blue;
+        }
+      }
+
+      h1 {
+        font-size: 52px;
+        font-weight: 700;
+        line-height: 56px;
+        color: #ffca05;
+        width: 500px;
+        text-decoration: underline;
+        margin-top: 30px;
+      }
+    }
+  }
+
+  .btn-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    width: 164px;
+    height: 40px;
+    border-style: none;
+    color: white;
+    background-color: #8a4192;
+    font-size: 20px;
+    border-radius: 4px;
+    text-align: center;
+
+    cursor: pointer;
+  }
+
+  .row {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    height: 5px;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 27px;
+    border-radius: 50px;
+  }
+
+  .intern-content-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    justify-content: space-evenly;
+    .intern-content-footer-left {
+      display: flex;
+      flex-direction: column;
+      h4 {
+        color: white;
+        font-size: 24px;
+        margin-bottom: 30px;
+      }
+      .social-media {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        img {
+          width: 55px;
+          gap: 40px;
+        }
+      }
+    }
+    .intern-content-footer-right {
+      h2 {
+        color: white;
+        font-size: 24px;
+      }
+      h3 {
+        span {
+          font-size: 24px;
+          color: #ffca05;
+        }
+        color: #fff;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .title{
+    font-size: 30px !important;
+  }
+  .content-footer {
+    flex-direction: column-reverse;
+    &-rigth{
+      padding: 0!important;
+    }
+  }
+
+  .intern-content-footer{
+    flex-direction: column !important;
+    &-left{
+      align-items: center;
+    }
+  }
+
+  .img-gloria{
+    width: 100%;
+  }
+
+  .content-footer-left{
+    align-items: center;
+  }
+}

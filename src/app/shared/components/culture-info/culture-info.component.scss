@@ -1,0 +1,105 @@
+@import "src/assets/scss/_responsive-media.scss";
+
+.culture-info {
+  width: 100%;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  .intern-info {
+    background-color: #612368;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    padding-left: 150px;
+    padding-right: 150px;
+    height: 100%;
+    .item-info {
+      height: 100%;
+      width: 100%;
+      gap: 64px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      margin: 100px;
+      .title-culture {
+        font-size: 36px;
+        font-weight: 700;
+      }
+      .text-culture {
+        width: 300px;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: justify;
+        font-weight: 500;
+      }
+    }
+    .item-info-center {
+      background-color: #c495c4;
+      height: 570px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: #fff;
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 64px;
+        .title-culture {
+          font-size: 36px;
+          font-weight: 700;
+        }
+        .text-culture {
+          width: 300px;
+          font-size: 24px;
+          line-height: 24px;
+          text-align: justify;
+          font-weight: 500;
+        }
+      }
+    }
+    .circulo-left {
+      position: sticky;
+      width: 100px;
+      height: 100px;
+      margin: 0px;
+      shape-outside: circle(50% at 30%);
+      clip-path: circle(50% at 0%);
+      background: #612368;
+    }
+    .circulo-rigth {
+      position: sticky;
+      width: 100px;
+      height: 100px;
+      margin: 0px;
+      shape-outside: circle(50% at 30%);
+      clip-path: circle(50% at 0%);
+      transform: rotate(180deg);
+      background: #612368;
+    }
+  }
+}
+
+.back-arrow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    border-top: 45px solid #c495c4;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 1400px){
+  .intern-info {
+    flex-direction: column;
+  }
+}

@@ -1,5 +1,5 @@
 deploy:
-  provider: heroku
+  provider: HostGator
   api_key:
     secure: <heroku_api_key>
   app: <app_name>

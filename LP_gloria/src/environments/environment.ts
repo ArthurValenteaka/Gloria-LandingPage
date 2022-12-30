@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  SERVER_URL: '/api/'
+  SERVER_URL: '/api/',
+  miska: 'http://localhost:1337'
 };
 
 /*

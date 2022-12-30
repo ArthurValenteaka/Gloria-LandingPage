@@ -1,3 +1,4 @@
+import { DonationModule } from './donation/donation.module';
 import { RockInRioModule } from './rock-in-rio/rock-in-rio.module';
 import { HomeModule } from './home/home.module';
 import { HelpModule } from './help/help.module';
@@ -5,6 +6,7 @@ import { AboutHerModule } from './about-her/about-her.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared/shared.module';
+import { DonationComponent } from './donation/donation.component';
 
 @NgModule({
   imports: [
@@ -13,7 +15,8 @@ import { SharedModule } from '../shared/shared.module';
     SharedModule,
     AboutHerModule,
     HelpModule,
-    RockInRioModule
+    RockInRioModule,
+    DonationModule
   ],
   exports: [
     CommonModule,
@@ -21,9 +24,9 @@ import { SharedModule } from '../shared/shared.module';
     SharedModule,
     AboutHerModule,
     HelpModule,
-    RockInRioModule
+    RockInRioModule,
+    DonationModule
   ],
-  declarations: [
-  ],
+  declarations: [],
 })
 export class ModulesModule {}

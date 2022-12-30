@@ -4,7 +4,7 @@
   </h4>
   <div class="intern-sponsor no-phone no-tablet cell-12-desktop">
     <div *ngFor="let item of sponsor" class="item-sponsor">
-      <img src="{{ item.imgSponsor }}" alt="" />
+      <img src="{{ item.attributes.image.data.attributes.url }}" alt="" />
     </div>
   </div>
   <div class="mobile-sponsor cell-4-phone cell-8-tablet no-desktop">
@@ -21,7 +21,7 @@
     >
       <ng-template swiperSlide *ngFor="let card of sponsor"
         ><div class="item-sponsor">
-          <img src="{{ card.imgSponsor }}" alt="" /></div
+          <img src="{{ card.attributes.image.data.attributes.url }}" alt="" /></div
       ></ng-template>
     </swiper>
   </div>

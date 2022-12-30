@@ -7,11 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  routeRio: string = this.router.url;
 
   constructor(private router: Router) {}
 
   ngOnInit(): void {
+  }
+
+  checkRoute() {
+    let routeNow = this.router.url;
+
+    if (routeNow.includes('/rock-in-rio') || routeNow.includes('/doacoes')){
+      return false
+    } else {
+      return true
+    }
+
   }
 
   title = 'LP_gloria';

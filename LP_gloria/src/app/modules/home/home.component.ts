@@ -40,7 +40,8 @@ export class HomeComponent implements OnInit {
       .getSponsor()
       .pipe(takeUntil(this.unsubscribeAll))
       .subscribe((res: any) => {
-        this.sponsor = res.response;
+        this.sponsor = res;
+        console.log(this.sponsor);
       });
   }
 }

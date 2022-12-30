@@ -1,3 +1,4 @@
+import { DonationModule } from './../donation/donation.module';
 import { HomeComponent } from './home.component';
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
@@ -32,6 +33,11 @@ const routes: Routes = [
     loadChildren: () => import('./../projects/projects.module').then(e => e.ProjectsModule),
     data : {currentPage:'projetos'}
   },
+  {
+    path: 'doacao',
+    loadChildren: () => import('./../donation/donation.module').then(e => e.DonationModule),
+    data : {currentPage:'doacao'}
+  }
 ];
 
 @NgModule({

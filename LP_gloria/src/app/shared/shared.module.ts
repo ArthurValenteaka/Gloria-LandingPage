@@ -1,3 +1,4 @@
+import { HeaderNoMenuComponent } from './components/header-no-menu/header-no-menu.component';
 import { VideoManifastComponent } from './components/video-manifast/video-manifast.component';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
@@ -25,6 +26,8 @@ import { FaceOwnersComponent } from './components/face-owners/face-owners.compon
 import { SliceGaleryComponent } from './components/slice-galery/slice-galery.component';
 import { SwiperModule } from 'swiper/angular';
 import { HamburguerMenuComponent } from './components/hamburguer-menu/hamburguer-menu.component';
+import { DonationSectionComponent } from './components/donation-section/donation-section.component';
+import {MatRadioModule} from '@angular/material/radio';
 
 const Components = [
   BannerHomeComponent,
@@ -45,6 +48,8 @@ const Components = [
   FaceOwnersComponent,
   SliceGaleryComponent,
   HamburguerMenuComponent,
+  HeaderNoMenuComponent,
+  DonationSectionComponent
 ];
 
 const Angular = [
@@ -52,12 +57,13 @@ const Angular = [
   MatFormFieldModule,
   MatInputModule,
   SwiperModule,
+  MatRadioModule
 ];
 
 const External = [PortalModule];
 
 @NgModule({
-  declarations: [Components],
+  declarations: [Components, ],
   imports: [Angular, External, CommonModule, RouterModule],
   exports: Components,
 })

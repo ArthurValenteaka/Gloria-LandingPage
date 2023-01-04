@@ -21,8 +21,6 @@ export class FooterComponent implements OnInit {
   }
 
   public sendEmail(e:any) {
-    console.log(e);
-
     emailjs
       .send(
         'service_j0u0o8e',

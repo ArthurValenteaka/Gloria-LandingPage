@@ -16,10 +16,12 @@ footer {
   .content-footer-left {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
     .img-gloria {
       position: relative;
-      bottom: 20px;
+      padding-top: 40px;
+      max-width: 350px;
     }
 
     .logo-gloria {

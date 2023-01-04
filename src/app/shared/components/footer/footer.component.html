@@ -8,16 +8,38 @@
     <div class="content-footer-rigth">
       <h1 class="title">SEJA UM ALIADO A CAUSA</h1>
 
-      <mat-form-field class="form">
-        <mat-label>Nome</mat-label>
-        <input matInput />
-      </mat-form-field>
-      <mat-form-field class="form">
-        <mat-label>E-mail</mat-label>
-        <input matInput />
-      </mat-form-field>
+      <form (submit)="sendEmail($event)" [formGroup]="emailForm">
+        <mat-form-field class="form">
+          <mat-label>Nome</mat-label>
+          <input
+            autocomplete="off"
+            matInput
+            formControlName="name"
+            name="name"
+            type="name"
+          />
+        </mat-form-field>
+        <mat-form-field class="form">
+          <mat-label>E-mail</mat-label>
+          <input
+            autocomplete="off"
+            formControlName="email"
+            name="email"
+            type="email"
+            [email]="true"
+            matInput
+          />
+        </mat-form-field>
+      </form>
 
-      <button mat-button class="btn-footer">Cadastre-se</button>
+      <button
+        [disabled]="valideButton()"
+        (click)="submitEmail()"
+        mat-button
+        class="btn-footer"
+      >
+        Cadastre-se
+      </button>
       <div class="row"></div>
       <div class="intern-content-footer">
         <div class="intern-content-footer-left">

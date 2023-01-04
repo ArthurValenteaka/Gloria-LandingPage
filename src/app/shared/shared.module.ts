@@ -28,6 +28,7 @@ import { SwiperModule } from 'swiper/angular';
 import { HamburguerMenuComponent } from './components/hamburguer-menu/hamburguer-menu.component';
 import { DonationSectionComponent } from './components/donation-section/donation-section.component';
 import {MatRadioModule} from '@angular/material/radio';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const Components = [
   BannerHomeComponent,
@@ -57,7 +58,9 @@ const Angular = [
   MatFormFieldModule,
   MatInputModule,
   SwiperModule,
-  MatRadioModule
+  MatRadioModule,
+  FormsModule,
+  ReactiveFormsModule
 ];
 
 const External = [PortalModule];

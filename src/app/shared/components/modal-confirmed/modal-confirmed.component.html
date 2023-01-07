@@ -1,1 +1,15 @@
-<p>modal-confirmed works!</p>
+<mat-dialog-content *ngIf="data">
+  <div class="modal">
+    <img class="modal-image" src="assets/img/favicon.ico" alt="coração da Glória" />
+
+    <div class="modal-message">
+      {{ data.message }}
+    </div>
+
+    <button class="modal-close" mat-button [mat-dialog-close]="true">
+      <mat-icon *ngIf="data.error">done</mat-icon>
+      <mat-icon *ngIf="!data.error">close</mat-icon>
+      Obrigado
+    </button>
+  </div>
+</mat-dialog-content>

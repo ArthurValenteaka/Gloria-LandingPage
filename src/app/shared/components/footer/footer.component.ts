@@ -1,6 +1,8 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+import { ModalConfirmedComponent } from '../modal-confirmed/modal-confirmed.component';
 
 @Component({
   selector: 'app-footer',
@@ -10,8 +12,9 @@ import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 })
 export class FooterComponent implements OnInit {
   emailForm!: FormGroup;
+  loadingReq : boolean = false;
 
-  constructor(public fb: FormBuilder) {}
+  constructor(public fb: FormBuilder, public dialog: MatDialog) {}
 
   ngOnInit(): void {
     this.emailForm = this.fb.group({
@@ -21,6 +24,7 @@ export class FooterComponent implements OnInit {
   }
 
   public sendEmail(e:any) {
+    this.loadingReq = true;
     emailjs
       .send(
         'service_j0u0o8e',
@@ -30,12 +34,20 @@ export class FooterComponent implements OnInit {
       )
       .then(
         (result: EmailJSResponseStatus) => {
-          console.log(result.text);
+          this.loadingReq = false;
+          this.openModal(false, 'Entraremos em contato, obrigada!')
         },
         (error) => {
-          console.log(error.text);
-        }
-      );
+          this.loadingReq = false;
+          this.openModal(true, 'Desculpe, não foi possível, tente novamente mais tarde!')
+        },
+      )
+  }
+
+  openModal(error:any, message:any){
+    this.dialog.open(ModalConfirmedComponent,{
+      data: {show: error, message}
+    })
   }
 
   valideButton() {

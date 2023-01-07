@@ -27,10 +27,13 @@ import { SliceGaleryComponent } from './components/slice-galery/slice-galery.com
 import { SwiperModule } from 'swiper/angular';
 import { HamburguerMenuComponent } from './components/hamburguer-menu/hamburguer-menu.component';
 import { DonationSectionComponent } from './components/donation-section/donation-section.component';
-import {MatRadioModule} from '@angular/material/radio';
+import { MatRadioModule } from '@angular/material/radio';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AboutIntroComponent } from './components/about-intro/about-intro.component';
 import { ModalConfirmedComponent } from './components/modal-confirmed/modal-confirmed.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatIconModule } from '@angular/material/icon';
+import { LoaderGloriaComponent } from './components/loader-gloria/loader-gloria.component';
 
 const Components = [
   BannerHomeComponent,
@@ -53,7 +56,9 @@ const Components = [
   HamburguerMenuComponent,
   HeaderNoMenuComponent,
   DonationSectionComponent,
-  AboutIntroComponent
+  AboutIntroComponent,
+  ModalConfirmedComponent,
+  LoaderGloriaComponent,
 ];
 
 const Angular = [
@@ -63,13 +68,15 @@ const Angular = [
   SwiperModule,
   MatRadioModule,
   FormsModule,
-  ReactiveFormsModule
+  ReactiveFormsModule,
+  MatDialogModule,
+  MatIconModule,
 ];
 
 const External = [PortalModule];
 
 @NgModule({
-  declarations: [Components, ModalConfirmedComponent, ],
+  declarations: [Components],
   imports: [Angular, External, CommonModule, RouterModule],
   exports: Components,
 })

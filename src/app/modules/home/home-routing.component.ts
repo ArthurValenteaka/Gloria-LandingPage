@@ -28,11 +28,11 @@ const routes: Routes = [
     loadChildren: () => import('./../voluntary/voluntary.module').then(e => e.VoluntaryModule),
     data : {currentPage:'voluntario'}
   },
-  {
-    path: 'projetos',
-    loadChildren: () => import('./../projects/projects.module').then(e => e.ProjectsModule),
-    data : {currentPage:'projetos'}
-  },
+  // {
+  //   path: 'projetos',
+  //   loadChildren: () => import('./../projects/projects.module').then(e => e.ProjectsModule),
+  //   data : {currentPage:'projetos'}
+  // },
   {
     path: 'doacao',
     loadChildren: () => import('./../donation/donation.module').then(e => e.DonationModule),

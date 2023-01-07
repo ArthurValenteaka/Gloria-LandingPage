@@ -1,29 +1,52 @@
 .first-container {
   background-color: #ffca05;
-  padding: 212px;
-  padding-top: 96px;
-  padding-bottom: 64px;
-  gap: 100px;
+  padding-block: 50px;
 
-  .title {
+  h2 {
     padding-bottom: 2.5rem;
-
-    h1 {
-      width: 100%;
-      color: #602367;
-      font-size: 48px;
-      font-weight: bold;
-    }
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 52px;
+    color: #602367;
   }
 
-  .text {
-    display: flex;
-    gap: 6rem;
-    padding-top: 64px;
-
-    h2 {
-      font-size: 32px;
+  .how-help {
+    .text {
+      font-family: "Archivo";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
       text-align: justify;
+      color: #000000;
+    }
+    .contacts {
+      &-title {
+        margin-block: 10px;
+        padding-left: 5px;
+        background-color: #602367;
+        font-family: "Archivo";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 24px;
+        text-align: justify;
+        border-radius: 6px;
+        color: #ffffff;
+        max-width: 300px;
+      }
+      &-details {
+        font-family: "Archivo";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: justify;
+        color: #561e5c;
+        margin: 0;
+      }
     }
   }
 }

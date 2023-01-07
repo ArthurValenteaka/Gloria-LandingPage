@@ -22,4 +22,14 @@ export class BannerHomeComponent implements OnInit {
       this.voluntaryPage = true;
     }
   }
+
+  changePosition(route:string){
+    switch (route) {
+      case '/home':;
+        return 'left';
+      case '/home/voluntario':
+        return 'right';
+    }
+    return
+  }
 }

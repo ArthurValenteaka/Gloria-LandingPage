@@ -2,8 +2,12 @@
   class="banner-home"
   style="background-image: url({{url}});
   background-size: cover;"
+  [ngStyle]="{'background-position':changePosition(this.router.url)}"
+
 >
-  <div class="banner-content grid inner-grid">
+  <div
+    class="banner-content grid inner-grid"
+  >
     <div class="front-group cell-4-phone cell-8-tablet cell-12-desktop">
       <div class="content-left">
         <div class="left-buttons">
@@ -16,7 +20,7 @@
       </div>
       <div class="content-right">
         <img class="no-phone" src="{{ imgHome }}" alt="imgHome" />
-        <h1>{{firstParagraph}}</h1>
+        <h1>{{ firstParagraph }}</h1>
         <h5 *ngIf="seccondText">{{ seccondText }}</h5>
       </div>
     </div>

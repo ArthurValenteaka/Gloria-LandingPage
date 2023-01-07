@@ -29,6 +29,8 @@ import { HamburguerMenuComponent } from './components/hamburguer-menu/hamburguer
 import { DonationSectionComponent } from './components/donation-section/donation-section.component';
 import {MatRadioModule} from '@angular/material/radio';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AboutIntroComponent } from './components/about-intro/about-intro.component';
+import { ModalConfirmedComponent } from './components/modal-confirmed/modal-confirmed.component';
 
 const Components = [
   BannerHomeComponent,
@@ -50,7 +52,8 @@ const Components = [
   SliceGaleryComponent,
   HamburguerMenuComponent,
   HeaderNoMenuComponent,
-  DonationSectionComponent
+  DonationSectionComponent,
+  AboutIntroComponent
 ];
 
 const Angular = [
@@ -66,7 +69,7 @@ const Angular = [
 const External = [PortalModule];
 
 @NgModule({
-  declarations: [Components, ],
+  declarations: [Components, ModalConfirmedComponent, ],
   imports: [Angular, External, CommonModule, RouterModule],
   exports: Components,
 })

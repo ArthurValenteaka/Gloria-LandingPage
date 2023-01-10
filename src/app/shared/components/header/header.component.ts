@@ -9,9 +9,9 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class HeaderComponent implements OnInit {
   navbarColored: boolean = false;
 
-  currentPage = this.route.url
+  currentPage = this.route;
 
-  constructor(private route: ActivatedRoute, ) {}
+  constructor(private route: Router, ) {}
 
   ngOnInit(): void {
   }

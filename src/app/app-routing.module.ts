@@ -12,15 +12,15 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule),
   },
-  {
-    path: 'rock-in-rio',
-    loadChildren: () => import('./modules/rock-in-rio/rock-in-rio.module').then(m => m.RockInRioModule),
-  },
-  {
-    path: 'doacoes',
-    loadChildren: () => import('./modules/donation/donation.module').then(e => e.DonationModule),
-    data : {currentPage:'projetos'}
-  },
+  // {
+  //   path: 'rock-in-rio',
+  //   loadChildren: () => import('./modules/rock-in-rio/rock-in-rio.module').then(m => m.RockInRioModule),
+  // },
+  // {
+  //   path: 'doacoes',
+  //   loadChildren: () => import('./modules/donation/donation.module').then(e => e.DonationModule),
+  //   data : {currentPage:'projetos'}
+  // },
 ];
 
 @NgModule({

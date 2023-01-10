@@ -23,13 +23,13 @@ export class BannerHomeComponent implements OnInit {
     }
   }
 
-  changePosition(route:string){
+  changePosition(route: string) {
     switch (route) {
-      case '/home':;
-        return 'left';
+      case '/home':
+        return '-60vh center';
       case '/home/voluntario':
-        return 'right';
+        return '-200px center';
     }
-    return
+    return;
   }
 }

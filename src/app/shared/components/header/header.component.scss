@@ -14,9 +14,6 @@ ul {
 
     cursor: pointer;
 
-    :active {
-      color: #372482;
-    }
   }
 }
 
@@ -33,6 +30,10 @@ ul {
   :hover {
     color: #372482;
   }
+}
+
+.active{
+  color: #372482 !important;
 }
 
 .header-bar {

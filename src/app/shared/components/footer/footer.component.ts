@@ -60,6 +60,5 @@ export class FooterComponent implements OnInit {
   submitEmail() {
     const form = this.emailForm.getRawValue();
     this.sendEmail(form)
-    console.log(form);
   }
 }

@@ -1,0 +1,53 @@
+.title {
+  padding-block: 50px;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 48px;
+  color: #602367;
+  strong {
+    font-weight: 700;
+  }
+}
+
+.cicle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  img {
+    width: 100%;
+    margin: 10px;
+  }
+}
+
+.levels {
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  section {
+    h3 {
+      font-family: "Archivo";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 23px;
+      line-height: 25px;
+      text-align: left;
+      color: #a33fe0;
+    }
+
+    p {
+      font-family: "Archivo";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: justify;
+      color: #000000;
+    }
+  }
+}

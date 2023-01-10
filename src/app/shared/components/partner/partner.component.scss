@@ -1,0 +1,81 @@
+.third-container {
+  background-image: url(~src/assets/img/help/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+
+  .grid {
+    height: 100%;
+    .intern {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .back-arrow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .arrow-down {
+      width: 0;
+      height: 0;
+      border-left: 45px solid transparent;
+      border-right: 45px solid transparent;
+      border-top: 45px solid #fff;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .title {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 45px;
+    color: #ffffff;
+    padding-block: 40px;
+    margin: 0;
+  }
+
+  .text-intern {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 25px;
+    text-align: justify;
+    color: #ffffff;
+
+    ul {
+      margin-bottom: 20px;
+      margin-top: 20px;
+      padding-block: 30px;
+      padding: 0;
+      li {
+        margin-top: 10px;
+        margin-left: 35px;
+      }
+    }
+    &-end {
+      margin-block: 30px;
+      font-weight: 700;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .text-intern {
+    font-size: 16px !important;
+    line-height: 18px !important;
+    font-weight: 600 !important;
+  }
+  .grid{
+    height: auto !important;
+  }
+}

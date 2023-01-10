@@ -1,0 +1,43 @@
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  justify-content: space-around;
+
+  li {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+
+    cursor: pointer;
+
+  }
+}
+
+.header-bar {
+  position: absolute;
+  z-index: 99;
+}
+
+.items-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+
+  :hover {
+    color: #372482;
+  }
+}
+
+.active{
+  color: #372482 !important;
+}
+
+.header-bar {
+  background-image: linear-gradient(#a23fe085, transparent);
+  width: 100%;
+  height: 20vh;
+}

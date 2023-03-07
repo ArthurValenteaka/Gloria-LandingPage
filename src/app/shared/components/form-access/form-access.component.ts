@@ -12,4 +12,8 @@ export class FormAccessComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  goToFooter(){
+    window.scrollTo(0,document.body.scrollHeight);
+  }
+
 }

@@ -27,7 +27,7 @@ export class FooterComponent implements OnInit {
     this.loadingReq = true;
     emailjs
       .send(
-        'service_j0u0o8e',
+        'service_952jdy2',
         'template_gexv0cv',
         e,
         'ZWTCEQcyj6PrjuOhZ'

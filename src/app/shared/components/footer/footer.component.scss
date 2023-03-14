@@ -4,6 +4,7 @@ footer {
   width: 100%;
   height: auto;
   background-color: #341138;
+  padding-block: 40px;
 
   .content-footer {
     display: flex;
@@ -62,6 +63,8 @@ footer {
         height: 50px;
         color: white;
         font-size: 20px;
+        padding-inline: 10px;
+        border-radius: 4px;
 
         &:-moz-placeholder {
           color: blue;
@@ -154,7 +157,7 @@ footer {
     font-size: 30px !important;
   }
   .content-footer {
-    flex-direction: column-reverse;
+    flex-direction: column;
     &-rigth{
       padding: 0!important;
     }
